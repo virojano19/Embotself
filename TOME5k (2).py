@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
-import LINEVIT
-from LINEVIT.lib.curve.ttypes import *
+import LINETCR
+from LINETCR.lib.curve.ttypes import *
 from datetime import datetime
 import time, random, sys, ast, re, os, io, json, subprocess, threading, string, codecs, requests, ctypes, urllib, urllib2, urllib3, wikipedia, tempfile
 from bs4 import BeautifulSoup
@@ -11,27 +11,27 @@ from threading import Thread
 from gtts import gTTS
 from googletrans import Translator
 
-cl = LINEVIT.LINE()
+cl = LINETCR.LINE()
 cl.login(token="EryiaI2AqAAYm33z7i56.tBbvHvKOjvPVuWvncrxXLG.vAT7uWEmweYGk+o1V8b8EzskpQCAp9M3bHlwQo4+up4=")
 cl.loginResult()
 
-#ki1 = LINEVIT.LINE()
+#ki1 = LINETCR.LINE()
 #ki1.login(token="
 #ki1.loginResult()
 
-#ki2 = LINEVIT.LINE()
+#ki2 = LINETCR.LINE()
 #ki2.login(token="
 #ki2.loginResult()
 
-#ki3 = LINEVIT.LINE()
+#ki3 = LINETCR.LINE()
 #ki3.login(token="
 #ki3.loginResult()
 
-#ki4 = LINEVIT.LINE()
+#ki4 = LINETCR.LINE()
 #ki4.login(token="
 #ki4.loginResult()
 
-#ki5 = LINEVIT.LINE()
+#ki5 = LINETCR.LINE()
 #ki5.login(token="
 #ki5.loginResult()
 
@@ -334,8 +334,7 @@ wait = {
     "comment1":"""
                 [ AOTO  LIKE  ]
                   [ SELF BOT ]
-  [ รับติดตั้ง เชลบอท ราคาประหยัด ]
-  [มีเซลกันรันให้เช่า ราคาถูก
+
      [By.☢🌷TOME↔BOTLINE🌷☢]
    http://line.me/ti/p/~tomeobtline
 
