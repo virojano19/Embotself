@@ -20,8 +20,8 @@ class LINE:
   obs_token = None
   refresh_token = None
 
-  UA = "Line/8.14.2"
-  LA = "CHROMEOS\t8.14.2\tChrome_OS\t1"
+  UA = "Line/6.0.0 iPad4,1 9.0.2"
+  LA = "IOSIPAD\t7.18.0\tiPhone OS\t11.12.1"
 
   def __init__(self):
     self.Talk = Talk()
@@ -51,14 +51,14 @@ class LINE:
     }
 
     self.Poll = Poll(self.authToken)
-    """self.channel = channel.Channel(self.authToken)
+    self.channel = channel.Channel(self.authToken)
     self.channel.login()
 
     self.mid = self.channel.mid
     self.channel_access_token = self.channel.channel_access_token
     self.token = self.channel.token
     self.obs_token = self.channel.obs_token
-    self.refresh_token = self.channel.refresh_token"""
+    self.refresh_token = self.channel.refresh_token
 
   def nxtQRLogin(self, callback=None):
 
