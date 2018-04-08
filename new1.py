@@ -19,8 +19,7 @@ print "login success"
 reload(sys)
 sys.setdefaultencoding('utf-8')
 helpMessage ="""╔═════════════════
-║                [SELF BOT]
-║[By.🌷✭₮Ӫℳ€↔βӪ₮₤ЇŊ€✭🌷]
+║              [TEAM SELF BOT]
 ╠════════════════
 ║     [☬ ชุดคำสั่ง ที่ 1 ☬]
 ╠════════════════
@@ -82,16 +81,14 @@ helpMessage ="""╔═════════════════
 ║☬➣『รีบอท / รีบูต』
 ║☬➣『รีคิก』
 ╠════════════════
-║ [By.🌷✭₮Ӫℳ€βӪ₮₤ЇŊ€✭🌷]
-║  ติดต่อ [LINE ID :  tomebotlone]
-║            [Link   Line ]
-║    http://line.me/ti/p/_hhRkiw2jP
+║
+║
+║
 ╚════════════════
 
 """
 helpMessage2 ="""╔═══════════════
-║                [SELF BOT]
-║[By.🌷✭₮Ӫℳ€↔βӪ₮₤ЇŊ€✭🌷]
+║              [TEAM SELF BOT]
 ╠═══════════════
 ║     [☬ ชุดคำสั่ง ที่ 2 ☬]
 ╠═══════════════
@@ -168,15 +165,14 @@ helpMessage2 ="""╔═══════════════
 ║☬➣『Protect On/off』
 ║☬➣『Namelock On/off』
 ╠═══════════════
-║ [By.🌷✭₮Ӫℳ€↔βӪ₮₤ЇŊ€✭🌷]
-║  ติดต่อ [LINE ID :  tomebotline]
-║            [Link ID  Line]
-║    http://line.me/ti/p/_hhRkiw2jP
+║
+║
+║
 ╚═══════════════
 """
 helpMessage3 ="""╔═══════════════
-║                [SELF BOT]
-║[By.🌷✭₮Ӫℳ€↔βӪ₮₤ЇŊ€✭🌷]
+║              [TEAM SELF BOT]
+║
 ╠═══════════════
 ║     [☬ ชุดคำสั่ง ที่ 3 ☬]
 ╠═══════════════
@@ -220,7 +216,7 @@ helpMessage3 ="""╔═══════════════
 ║☬➣〘profileig 〙
 ║☬➣〘checkdate 〙
 ╠═══════════════
-║ѕєʟғвот[₮Ӫℳ€βӪ₮₤ЇŊ€]κɪcκєʀ 
+║[ѕєʟғвот βӪ₮₤ЇŊ€] 
 ╠═══════════════
 ║     ✦เปิด/ปิดข้อความต้อนรับ✦
 ╠═══════════════
@@ -255,10 +251,9 @@ helpMessage3 ="""╔═══════════════
 ║☬Tag1 ➠เช็ตข้อความแทค
 ║☬Tag2 ➠เช็คข้อความแทค
 ╠═══════════════
-║[By.☬🌷TOME↔BOTLINE🌷]
-║  ติดต่อ [LINE ID :  tomebotline]
-║            [Link ID  Line]
-║    http://line.me/ti/p/_hhRkiw2jP
+║
+║
+║
 ╚═══════════════
 """
 
@@ -294,25 +289,17 @@ wait = {
     'leaveRoom':True,
     'timeline':True,
     'autoAdd':True,
-    'message':"[ตอบรับ อัตโนมัติ]\n[SELF BOT]\n[By.☬ധู้さန້ণق↔ധഖาໄฟ☬]\nhttp://line.me/ti/p/9r-uE5EU09",
+    'message':"[ข้ความตอบรับ อัตโนมัติ BY:SELF BOT]",
     "lang":"JP",
     "commentOn":True,
     "comment1":"""
                 [ AOTO  LIKE  ]
                   [ SELF BOT ]
-  [ รับติดตั้ง เชลบอท ราคาประหยัด ]
-  [และยังมี เซลบอทกันรัน ราคาย่อมเยาให้เช่าอีกด้วย]
-
-     [By.☬🌷 TOM↔BOTLINE🌷☬]
-   http://line.me/ti/p/~tomebotline
 
    ─██─███─███─██─██─██▄█
    ─██─▀██▄██▀─▀█▄█▀─██▀█
    ▄██▄▄█▀▀▀─────▀──▄██▄▄█
 
-           [   By. ทีมผู้สร้างบอท พญาไฟ ]
-            [วิทย์ พญาไฟ]
-          http://line.me/ti/p/9r-uE5EU09
 """,
     "acommentOn":False,
     "bcommentOn":False,
@@ -1859,19 +1846,19 @@ def bot(op):
                     cl.sendText(msg.to,msg.text)
             elif msg.text is None:
                 return
-            elif msg.text in ["คำสั่ง"]:
+            elif msg.text in ["คำสั่ง","Help"]:
                 print "\nHelp pick up..."
                 if wait["lang"] == "JP":
                     cl.sendText(msg.to, helpMessage + "")
                 else:
                     cl.sendText(msg.to,helpt)
-            elif msg.text in ["คำสั่ง2"]:
+            elif msg.text in ["คำสั่ง2","Help2"]:
                 print "\nHelp pick up..."
                 if wait["lang"] == "JP":
                     cl.sendText(msg.to, helpMessage2 + "")
                 else:
                     cl.sendText(msg.to,helpt)
-            elif msg.text in ["คำสั่ง3"]:
+            elif msg.text in ["คำสั่ง3","Help3"]:
                 print "\nHelp pick up..."
                 if wait["lang"] == "JP":
                     cl.sendText(msg.to, helpMessage3 + "")
@@ -2041,7 +2028,7 @@ def bot(op):
                                      "STKID": "10",
                                      "STKPKGID": "1",
                                      "STKVER": "100" }
-                ki1.sendMessage(msg)
+                cl.sendMessage(msg)
                 ki2.sendMessage(msg)
             elif "youname " in msg.text.lower():
                 txt = msg.text.replace("youname ", "")
@@ -2194,7 +2181,7 @@ def bot(op):
                         pass
             elif msg.text.lower() in ["admins","mee","ผู้สร้าง"]:
                 msg.contentType = 13
-                adm = 'uf0bd4970771f26a8cef66473d59bcc69'
+                adm = 'uc00bb54b97ebb34309eaf67e17a6f50b'
                 msg.contentMetadata = {'mid': adm}
                 cl.sendMessage(msg)
                 cl.sendText(msg.to,"Add Line http://line.me/ti/p/9r-uE5EU09")
@@ -2674,8 +2661,8 @@ def bot(op):
                 msg.contentMetadata = {"mid":mmid}
                 cl.sendMessage(msg)
 
-            elif "Phet Keyy" in msg.text:
-                cl.sendText(msg.to,""" 􀜁􀇔􏿿􀜁􀇔􏿿[{PHET HACK BOT}] 􀜁􀇔􏿿􀜁􀇔􏿿 \n\n 􀜁􀇔􏿿 key Only Kicker 􀜁􀇔􏿿 #\n\n􀜁􀇔􏿿[Kb1 in]\n􀜁􀇔􏿿[1Aditname:]\n􀜁􀇔􏿿[B Cancel]\n􀜁􀇔􏿿[kick @]\n􀜁􀇔􏿿[Ban @]\n􀜁􀇔􏿿[kill]\n􀜁􀇔􏿿[BotChat]\n􀜁􀇔􏿿[Respons]\n􀜁􀇔􏿿[Pb1 Gift]\n􀜁􀇔􏿿[Pb1 bye]\n\n""")
+            elif "Keyy" in msg.text:
+                cl.sendText(msg.to,""" 􀜁􀇔􏿿􀜁􀇔􏿿[{TEAM HACK BOT}] 􀜁􀇔􏿿􀜁􀇔􏿿 \n\n 􀜁􀇔􏿿 key Only Kicker 􀜁􀇔􏿿 #\n\n􀜁􀇔􏿿[Kb1 in]\n􀜁􀇔􏿿[1Aditname:]\n􀜁􀇔􏿿[B Cancel]\n􀜁􀇔􏿿[kick @]\n􀜁􀇔􏿿[Ban @]\n􀜁􀇔􏿿[kill]\n􀜁􀇔􏿿[BotChat]\n􀜁􀇔􏿿[Respons]\n􀜁􀇔􏿿[Pb1 Gift]\n􀜁􀇔􏿿[Pb1 bye]\n\n""")
 
             elif msg.text.lower() == 'ยกเลิก1':
                 if msg.toType == 2:
@@ -3653,7 +3640,7 @@ def bot(op):
             elif msg.text.lower() == 'ออน':  
                 cl.sendText(msg.to, "โปรดรอสักครู่....")
                 eltime = time.time() - mulai
-                van = "[SELF BOT]\n[By.☬✭₮Ӫℳ€↔βӪ₮₤ЇŊ€✭☬]\n\nระยะเวลาที่บอททำงาน\n"+waktu(eltime)
+                van = "[SELF BOT]\nระยะเวลาที่บอททำงาน\n"+waktu(eltime)
                 cl.sendText(msg.to,van)
 #========================================
 
@@ -4214,7 +4201,7 @@ def bot(op):
  
             elif msg.text in ["ทีมงาน"]:
                 msg.contentType = 13
-                cl.sendText(msg.to, "[TEAM SELFBOT]\n[By.☬ധู้さန້ণق↔ധഖาໄฟ☬]")
+                cl.sendText(msg.to, "[TEAM SELF BOT]")
                 cl.sendText(msg.to, "ผู้สร้าง.. SELFBOT\nBy.🔯ധู้さန້ণق↔ധഖาໄฟ🔯")
                 msg.contentMetadata = {'mid': 'uf0bd4970771f26a8cef66473d59bcc69'}
                 cl.sendMessage(msg)
@@ -4768,7 +4755,7 @@ def bot(op):
                  if jml > 500:
                      print "Terlalu Banyak Men 500+"
                  cnt = Message()
-                 cnt.text = "[SELF BOT\n[By.☬🌷TOME↔BOTLINE🌷☬]:\n" + str(jml) +  " Members"
+                 cnt.text = "สมาชิกกลุ่มนี้ " + str(jml) +  " คน"
                  cnt.to = msg.to
                  cl.sendMessage(cnt)
 
@@ -6232,7 +6219,7 @@ def bot(op):
                 if jml > 500:
                     cl.sendText(msg.to,'Member melebihi batas.')
                 cnt = Message()
-                cnt.text = "PHET TAG DONE : " + str(jml) +  " Members"
+                cnt.text = "WEE TAG DONE : " + str(jml) +  " Members"
                 cnt.to = msg.to
                 cl.sendMessage(cnt)
 
@@ -6293,7 +6280,7 @@ def bot(op):
                 if jml > 500:
                     cl.sendText(msg.to,'Member melebihi batas.')
                 cnt = Message()
-                cnt.text = "PHET TAG DONE : " + str(jml) +  " Members"
+                cnt.text = "WEE TAG DONE : " + str(jml) +  " Members"
                 cnt.to = msg.to
                 cl.sendMessage(cnt)
 
@@ -6301,7 +6288,7 @@ def bot(op):
                         cl.sendText(msg.to,"😆เช็คจัง กลัวบอทหลุด ล่ะสิ😆")
 
             elif msg.text in ["เทสบอท"]:
-                        cl.sendText(msg.to,"SELF BOT\n[By.☬ധู้さန້ণق↔ധഖาໄฟ☬]")
+                        cl.sendText(msg.to,"TEAM SELF BOT")
 
             elif msg.text in [".อยู่ไหม"]:
                         cl.sendText(msg.to,"อยู่...")
@@ -6438,14 +6425,14 @@ def bot(op):
                 ki9.comment(url[25:58], url[66:], wait["comment1"])
                 ki10.like(url[25:58], url[66:], likeType=1001)
                 ki10.comment(url[25:58], url[66:], wait["comment1"])
-                print ("AUTO LIKE SELFBOT")
-                print ("Auto Like By.☬ധู้さန້ণق↔ധഖาໄฟ☬")
+                print ("AUTO LIKE SELF BOT")
+                print ("Auto Like By.wee")
 
         if op.type == 15:
             if wait["Notifed"] == True:
                 if op.param2 in Bots:
                     return
-                cl.sendText(op.param1,cl.getContact(op.param2).displayName + "\n􀜁􀄄􏿿 เเล้วพบใหม่นะ 􀜁􀄄􏿿")
+                cl.sendText(op.param1,cl.getContact(op.param2).displayName + "\n􀜁􀄄􏿿 บ๊ายบาย เเล้วพบใหม่นะ 􀜁􀄄􏿿")
                 print "MEMBER OUT GROUP"
 
         if op.type == 17:
@@ -6493,7 +6480,7 @@ def bot(op):
                 contact = cl.getContact(op.param2)
                 image = "http://dl.profile.line-cdn.net/" + contact.pictureStatus
                 cl.sendImageWithUrl(op.param1,image)
-                cl.sendText(op.param1,cl.getContact(op.param2).displayName + "\n\n[🙋ยินดีตอนรับ][By. ☬ധู้さန້ণق↔ധഖาໄฟ☬]")
+                cl.sendText(op.param1,cl.getContact(op.param2).displayName + "\n\n[🙋ยินดีตอนรับจ้า😘][By.TEAM SELF BOT]")
                 print "MEMBER HAS JOIN THE GROUP"
 
         if op.type == 19:
