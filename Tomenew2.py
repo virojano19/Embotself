@@ -6455,6 +6455,7 @@ def bot(op):
                 ginfo = cl.getGroup(op.param1)
                 contact = cl.getContact(op.param2)
                 image = "http://dl.profile.line-cdn.net/" + contact.pictureStatus
+		cl.sendText(op.param1,"💕สวัสดีจร้า💕 " + cl.getContact(op.param2).displayName + "\n\n กลุ่ม ☞ " + str(ginfo.name) + "\n\n ยินดีต้อนรับจ้า  \n\n อย่าลืมปิดแจ้งเตือนด้วยนะ😊😊" )
                 c = Message(to=op.param1, from_=None, text=None, contentType=13)
                 c.contentMetadata={'mid':op.param2}
                 cl.sendMessage(c)
