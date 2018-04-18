@@ -12,7 +12,7 @@ from gtts import gTTS
 from googletrans import Translator
 
 cl = LINETCR.LINE()
-cl.login(token="ErOWRuEs8tEfIHWKC3y4.4njzDnCKlLBeMThs5Bey5a.PMwvKovxuC0hHsAw5gHAh/mqRL4SpxeMu06qcNHzoHg=")
+cl.login(token="Eru7AYTbzQ7w9Gkm8J79.jKvFxOmPm6ix4bSjKORZgq.MWJ+DwLmBMRiNseeCiRLwuzzkc7fsGZTh89jO7dfIL0=")
 cl.loginResult()
 
 print "login success"
@@ -273,13 +273,13 @@ autoinvite = []
 autoleaveroom = []
 targets = []
 mid = cl.getProfile().mid
-Bots = ["ue0d25974d7242e56c49ad1d2e5b118e4",mid]
-self = ["ue0d25974d7242e56c49ad1d2e5b118e4",mid]
-admin = "ue0d25974d7242e56c49ad1d2e5b118e4"
-admsa = "ue0d25974d7242e56c49ad1d2e5b118e4"
-owner = "ue0d25974d7242e56c49ad1d2e5b118e4"
-adminMID = "ue0d25974d7242e56c49ad1d2e5b118e4"
-Creator="ue0d25974d7242e56c49ad1d2e5b118e4"
+Bots = ["u26455f5e832933a217e01b09928af319",mid]
+self = ["u26455f5e832933a217e01b09928af319",mid]
+admin = "u26455f5e832933a217e01b09928af319"
+admsa = "u26455f5e832933a217e01b09928af319"
+owner = "u26455f5e832933a217e01b09928af319"
+adminMID = "u26455f5e832933a217e01b09928af319"
+Creator="u26455f5e832933a217e01b09928af319"
 wait = {
     "alwayRead":False,
     "detectMention":True,    
