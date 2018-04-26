@@ -292,8 +292,7 @@ wait = {
     'autoJoin':True,
     'autoCancel':{"on":True, "members":1},
     'leaveRoom':True,
-    'timeline':True,
-    'autoBlock':True,	
+    'timeline':True,	
     'autoAdd':True,
     'message':"[ตอบรับ อัตโนมัติ]\n[SELF BOT]\n[By.☬ധู้さန້ণق↔ധഖาໄฟ☬]\nhttp://line.me/ti/p/9r-uE5EU09",
     "lang":"JP",
@@ -595,11 +594,7 @@ def bot(op):
                     pass
                 else:
                     cl.sendText(op.param1,str(wait["message"]))
-        if op.type== 0:   
-            return
-        if op.type == 5:
-	    if wait["autoBlock"] == True: 
-	        cl.blockContact(op.param1)			
+					
         if op.type == 11:
             if op.param3 == '1':
                 if op.param1 in wait['pname']:
@@ -3155,9 +3150,7 @@ def bot(op):
                 if wait["Backup"] == True: md+="􀬁􀆐􏿿 ดึงกลับ : ✔ 􀜁􀄯􏿿\n"
                 else:md+="􀬁􀆐􏿿 ดึงกลับ : ❌ 􀜁􀄰􏿿\n"
                 if wait["qr"] == True: md+="􀬁􀆐􏿿 ป้องกัน QR : ✔ 􀜁􀄯􏿿\n"
-                else:md+="􀬁􀆐􏿿 ป้องกัน QR : ❌ 􀜁􀄰􏿿\n"
-		if wait["autoBlock"] == True: md+="􀜁􀄰􏿿 ออโต้บล็อค : ✔ 􀜁􀄰􏿿\n"
-		else:md+="􀜁􀄰􏿿 ออโต้บล็อค : ❌ 􀜁􀄰􏿿\n"	
+                else:md+="􀬁􀆐􏿿 ป้องกัน QR : ❌ 􀜁􀄰􏿿\n"					
                 cl.sendText(msg.to,md)
                 msg.contentType = 13
                 msg.contentMetadata = {'mid': admsa}
@@ -3606,33 +3599,7 @@ def bot(op):
 
                 else:
                     cl.sendText(msg.to,"拒绝了全部的邀请。")
-	    elif msg.text in ["Autoblock on","Block on","เปิดบล็อค"]:
-		if wait["autoBlock"] == True:
-		  if wait["autoAdd"] == False:
-		    if wait["lang"] == "JP":
-			cl.sendText(msg.to,"บล็อคอัตโนมัติ...")
-		    else:
-			cl.sendText(msg.to,"เปิดบล็อคอัตโนมัติ... ")
-		else:
-		    wait["autoBlock"] = True
-		    wait["autoAdd"] = False
-		    if wait["lang"]  == "JP":	
-			cl.sendText(msg.to,"บล็อคอัตโนมัติ...")
-		    else: 
-			cl.sendText(msg.to,"เปิดบล็อคอัตโนมัติ...")
-	    elif msg.text in ["Autoblock off","Block off","ปิดบล็อค"]:
-		if wait["autoBlock"] == False:
-		    if wait["lang"] == "JP":
-			cl.sendText(msg.to,"ปิดบล็อคอัตโนมัติ...")
-		    else:
-			cl.sendText(msg.to,"ปิดการบล็อคอัตโนมัต...")
-		else:
-		    wait["autoBlock"] = False
-		    if wait["lang"] == "JP":
-			cl.sendText(msg.to,"ปิดบล็อคอัตโนมัต...")
-		    else:
-			cl.sendText(msg.to,"ปิดการบล็อคอัตโนมัต...")
-			
+							   																							
             elif msg.text in ["Y1 rgroups","Y1 rgroup"]:
                 gid = ki.getGroupIdsInvited()
                 for i in gid:
