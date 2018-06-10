@@ -6444,8 +6444,13 @@ def bot(op):
         if op.type == 15:
             if wait["Notifed"] == True:
                 if op.param2 in Bots:
-                    return
-                cl.sendText(op.param1,cl.getContact(op.param2).displayName + "\n􀜁􀄄􏿿 เเล้วพบใหม่นะ 􀜁􀄄􏿿")
+                    return 
+	        ginfo = cl.getGroup(op.param1)
+	      	contact = cl.getContact(op.param2)
+		image = "http://dl.profile.line-cdn.net/" + contact.pictureStatus
+                cl.sendText(op.param1,cl.getContact(op.param2).displayName + "\n􀜁􀄄􏿿 เเล้วพบกันใหม่นะ 􀜁􀄄􏿿")
+		c = Message(to=op.param1, from_=None, text=None, contentType=13)
+		cl.sendImageWithUrl(op.param1,image)
                 print "MEMBER OUT GROUP"
 
         if op.type == 17:
