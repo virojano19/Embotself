@@ -12,7 +12,7 @@ from gtts import gTTS
 from googletrans import Translator
 
 cl = LINETCR.LINE()
-cl.login(token="ใส่โทเค่น")
+cl.login(token="EtPrfpXlcNA6ecerQVMb.qRBCNO7A0A7P/0mL61q96W.bYcXQTeA8YAIJEe5TCS2EEF7Yoqkpl3/UPweI2G/cvk=")
 cl.loginResult()
 
 print "login success"
@@ -273,13 +273,13 @@ autoinvite = []
 autoleaveroom = []
 targets = []
 mid = cl.getProfile().mid
-Bots = ["ใสmid",mid]
-self = ["",mid]
-admin = ""
-admsa = ""
-owner = ""
-adminMID = ""
-Creator=""
+Bots = ["u42b6dc9e8edad1aee9fb4325eb543deb",mid]
+self = ["u42b6dc9e8edad1aee9fb4325eb543deb",mid]
+admin = "u42b6dc9e8edad1aee9fb4325eb543deb"
+admsa = "u42b6dc9e8edad1aee9fb4325eb543deb"
+owner = "u42b6dc9e8edad1aee9fb4325eb543deb"
+adminMID = "u42b6dc9e8edad1aee9fb4325eb543deb"
+Creator="u42b6dc9e8edad1aee9fb4325eb543deb"
 wait = {
     "alwayRead":False,
     "detectMention":True,    
